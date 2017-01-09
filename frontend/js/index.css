@@ -1,0 +1,27 @@
+@keyframes changed {
+  0% {  background-color: orange;  }
+  100% {  background-color: transparent;  }
+}
+
+.changed{
+  animation-name: changed;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+table {
+  margin-bottom: 15px;
+  border: solid;
+}
+
+table.row_animate{
+  border-collapse: collapse;
+  width: 320px;
+}
+
+td {
+  min-width:150px;
+  text-align:right;
+  border: 1px solid #ccc;
+}
+button { font-size: 16px; }
