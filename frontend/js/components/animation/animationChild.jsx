@@ -24,7 +24,8 @@ export default class AnimateOnUpdateChild extends ReactCSSTransitionGroupChild
 
 			oldData = context.props.data[keyValue];
 			newData = nextProps.data[keyValue];
-
+			console.log(oldData);
+			console.log(newData);
 			if(!!(newData && oldData != newData)){
 				context.transition('enter', null, context.props.enterTimeout);
 			}

@@ -4,8 +4,7 @@ import AnimateOnUpdateChild from './animation/animationChild.jsx';
 
 export default class AnimateOnUpdate extends ReactCSSTransitionGroup
 {
-	_wrapChild(child)
-	{
+	_wrapChild = (child) => {
 
 		return React.createElement(
 			AnimateOnUpdateChild,

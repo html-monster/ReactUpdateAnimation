@@ -43,7 +43,7 @@ class AnimationTest extends React.Component
 				transitionEnterTimeout={800}
 				data={row}
 			>
-				<td data-verify={'firstNumber'}>{row.firstNumber}</td> {/*data-verify - the key which value we want to compare*/}
+				<td data-verify={'firstNumber'}>{row.firstNumber}</td>
 				<td data-verify={'secondNumber'}>{row.secondNumber}</td>
 			</AnimateOnUpdate>
 		);
@@ -109,6 +109,8 @@ class AnimationTest extends React.Component
 			}
 			newState.push(newItem)
 		});
+		// console.log(this.state.numbers);
+		// console.log(newState);
 		this.setState({ numbers: newState });
 	}
 
