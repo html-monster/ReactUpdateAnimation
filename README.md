@@ -4,3 +4,6 @@ It expands component capabilities, now the class will be added not only while th
 
 ## Demo
 https://html-monster.github.io/
+
+## Run example
+npm run devserver
