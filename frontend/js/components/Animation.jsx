@@ -23,4 +23,12 @@ export default class AnimateOnUpdate extends ReactCSSTransitionGroup
 	};
 }
 
+AnimateOnUpdate.propTypes = {
+	component: React.PropTypes.any,
+	transitionName: React.PropTypes.any.isRequired,
+	transitionEnter: React.PropTypes.bool,
+	transitionLeave: React.PropTypes.bool,
+	data: React.PropTypes.any.isRequired
+};
+
 module.exports = AnimateOnUpdate;
